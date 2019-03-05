@@ -54,6 +54,8 @@ public class Partition {
 				tail.next = node;
 				tail = node;
 			}
+			//Bound to get an endless loop. I suggest you get the next element at the beginning of while loop
+			// Assign node to next at end of while loop
 			node = node.next;
 		}
 		tail.next = null;
